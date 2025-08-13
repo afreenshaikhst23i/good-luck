@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+
+    --color-black: #000000;
+    --color-white: #ffffff;
+  
+    --color-primary: #ed6079;
+    --color-secondary: #8d818c;
+
+    --font-body: Libertinus Serif, ui-sans-serif, system-ui;
+    --font-album-cover: Niconne, ui-sans-serif, system-ui;
+
+    --breakpoint-sm: 40rem; 
+    --breakpoint-md: 48rem; 
+    --breakpoint-lg: 64rem; 
+    --breakpoint-xl: 80rem; 
+    --breakpoint-2xl: 90rem; 
+    --breakpoint-3xl: 93.5rem; 
+}
+
+@utility container {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-inline: auto;
+
+  @media (width >= theme(--breakpoint-sm)) {
+    max-width: 100%;
+  }
+  @media (width >= theme(--breakpoint-md)) {
+    max-width: 100%;
+  }
+  @media (width >= theme(--breakpoint-lg)) {
+    max-width: 100%;
+  }
+  @media (width >= theme(--breakpoint-xl)) {
+    max-width: 73.75rem;
+  }
+  @media (width >= theme(--breakpoint-2xl)) {
+    max-width: 82rem;
+  }
+  @media (width >= theme(--breakpoint-3xl)) {
+    max-width: 86.5rem;
+  }
+}
+
+body {
+    @apply w-full font-body;
+}
+.container {
+    max-width: 1100px;
+}
+.primary-heading {
+    @apply text-primary text-[32px] sm:text-[40px] font-bold text-center relative mb-8;
+    letter-spacing: 2px;
+}
+.view-more {
+    @apply flex justify-center items-center mt-8;
+    .view-more-link {
+        @apply text-gray-700 border-b border-primary;
+    }
+}
+
+/* MENU CSS STARTS HERE */
+.header-main {
+    @apply p-4;
+    .topnav {
+        @apply block sm:flex flex-col justify-center items-center;
+    }
+    .logo-wrapper {
+        @apply flex justify-between items-center;
+        .brand-logo {
+            @apply flex sm:justify-center sm:items-center sm:pt-5;
+            & img {
+                @apply w-1/2 sm:w-[15%];
+            }
+        }
+        .icon {
+            @apply block sm:hidden;
+            & svg {
+                @apply w-5 h-5;
+            }
+        }
+    }
+    .menu-wrapper {
+        @apply hidden sm:flex flex-row sm:mt-6 border-y border-gray-300;
+        .nav-item {
+            @apply inline-block text-gray-700 py-4 px-12 text-center text-base tracking-[2px] hover:underline;
+        }
+        .nav-item.active {
+            @apply underline;
+        }
+    }
+    .topnav.open {
+        .menu-wrapper {
+            @apply flex flex-col absolute top-[95px] left-0 w-full bg-white z-10 shadow-[0px_4px_10px_-4px_#9b9898] h-full;
+        }
+    }
+}
+/* MENU CSS ENDS HERE */
+
+
+/* SLIDER CSS STARTS HERE */
+.slideshow-section {
+    .slideshow-container {
+        & img {
+            @apply h-auto lg:h-[100vh] object-cover object-center;
+        }
+    }
+    .swiper-button-next, .swiper-button-prev {
+        @apply bg-white opacity-0;
+        transition: 1s;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+        @apply text-base font-extrabold text-gray-800;
+    }
+}
+.slideshow-section:hover {
+    .swiper-button-next, .swiper-button-prev {
+        @apply bg-white h-8 w-8 lg:h-14 lg:w-14 opacity-100;
+    }
+}
+/* SLIDER CSS ENDS HERE */
+
+
+/* QUOTE SECTION CSS STARTS HERE */
+.quote-section {
+    @apply pb-0 pt-16 sm:py-16;
+    .quote-wrapper {
+        @apply flex justify-center flex-col items-center text-center gap-2 sm:gap-[30px] relative;
+        .the-quote {
+            @apply text-[32px] sm:text-[40px] m-0 font-extrabold text-primary;
+        }
+        .the-sub-text {
+            @apply text-[26px] sm:text-3xl m-0 text-secondary;
+        }
+        .quote-watermark {
+            @apply absolute left-4;
+        }
+    }
+}
+/* QUOTE SECTION CSS ENDS HERE */
+
+
+/* IMAGE GRID SECTION CSS STARTS HERE */
+.photo-grid-section {
+    @apply px-4 sm:px-8 py-10;
+    .grid-list {
+        @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8;
+        .grid-list-item {
+            @apply overflow-hidden cursor-pointer font-album-cover;
+            & img {
+                transition: transform 1s;
+            }
+        }
+        .grid-list-item:hover img {
+            transform: scale(1.1);
+        }
+    }
+    .grid-name {
+        @apply text-center pt-4 text-2xl;
+    }
+}
+.photo-grid-section.portfolio {
+    .grid-list {
+        @apply gap-y-12 sm:gap-x-8 sm:gap-y-20;
+        .grid-list-item {
+            a {
+                @apply block;
+            }
+        }
+        .grid-list-item:hover img {
+            transform: none;
+        }
+    }
+}
+/* IMAGE GRID SECTION CSS ENDS HERE */
+
+
+.portfolio-detail-section {
+    .portfolio-detail-wrap {
+        @apply bg-gray-950 text-white p-4 lg:p-10;
+    }
+    .portfolio-detail-main {
+        @apply flex flex-col sm:flex-row gap-4 sm:gap-8 items-center;
+        .portfolio-detail-text {
+            @apply basis-1/2 text-[60px];
+            .d-text {
+                @apply inline-block whitespace-pre-wrap [word-spacing:100vw];
+            }
+        }
+        .portfolio-detail-img {
+            @apply basis-1/2;
+        }
+    }
+    & hr {
+        @apply my-20;
+    }
+    .portfolio-detail-grid {
+        .photo-grid-section {
+            @apply p-0;
+            .grid-list {
+                @apply block columns-1 sm:columns-2;
+                .grid-list-item {
+                    @apply break-inside-avoid last-of-type:mb-0 mb-4 sm:mb-8 overflow-hidden;
+                }
+                & img {
+                    @apply h-auto;
+                }
+            }
+        }
+    }
+}
+
+.films-section {
+    @apply px-4 sm:px-8 py-10;
+    .film-grid {
+        /* @apply grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8; */
+        .film-item {
+            @apply w-full lg:max-w-[50%] mx-auto;
+        }
+    }
+}
+
+.fifty-section {
+    @apply py-10;
+    .right-fifty-wrapper {
+        @apply flex flex-col-reverse sm:flex-row gap-8 items-center justify-center;
+        & img {
+            @apply sm:shadow-[14px_-12px_15px_0px_#ed607987];
+        }
+    }
+    .left-fifty-wrapper {
+        @apply flex flex-col-reverse sm:flex-row-reverse gap-8 items-center justify-center;
+        & img {
+            @apply sm:shadow-[-14px_-12px_15px_0px_#ed607987];
+        }
+    }
+    .text-wrap {
+        @apply basis-1/2;
+    }
+    .img-wrap {
+        @apply basis-1/2;
+    }
+}
+.about-section {
+    .text-wrap {
+        @apply text-base sm:text-lg text-gray-700 flex flex-col gap-4;
+        & strong {
+            @apply italic text-gray-900;
+        }
+    }
+}
+
+.service-section {
+    @apply py-10 overflow-hidden;
+    .text-wrap {
+        @apply text-base sm:text-lg text-gray-700;
+        & strong {
+            @apply italic text-gray-900;
+        }
+        .service-heading {
+            @apply hidden sm:block;
+        }
+    }
+    .img-wrap {
+        transform: translateX(0);
+        .service-img {
+            @apply object-cover w-full;
+        }
+        .service-heading {
+            @apply block sm:hidden;
+        }
+    }
+    .service-heading {
+        @apply text-lg sm:text-xl pb-4 font-bold;
+    }
+    .service-text {
+        @apply text-base;
+    }
+    .right-fifty-wrapper {
+        @apply flex-col-reverse sm:flex-row;
+    }
+    .left-fifty-wrapper {
+        @apply flex-col-reverse sm:flex-row-reverse;
+    }
+}
+
+.insta-section {
+    .insta-grid {
+        @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8;
+        .instagram-media {
+            @apply h-[450px];
+            .Caption {
+                display: none !important;
+            }
+        }
+    }
+}
+
+.contact-section {
+    .text-wrap {
+        @apply text-base sm:text-lg text-gray-700;
+    }
+    .cont-heading {
+        @apply text-xl pt-6 pb-2 font-bold;
+    }
+    .cont-details {
+        @apply flex flex-col gap-2;
+    }
+}
+
+.footer-main {
+    .footer-wrapper {
+        @apply flex flex-col justify-center sm:items-center py-6 sm:py-10 gap-4;
+        .footer-item {
+            address {
+                @apply text-base sm:text-xl;
+            }
+            .footer-logo {
+                @apply pb-2 sm:pb-4 flex flex-col justify-center items-center;
+                & img {
+                    @apply w-[200px] sm:w-[250px];
+                }
+            }
+            .contact-wrap {
+                @apply flex flex-col lg:flex-row gap-2 lg:gap-10;
+                .contact {
+                    @apply flex flex-row items-center gap-2 text-base sm:text-xl;
+                    & svg {
+                        @apply w-5 h-5 shrink-0;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        @apply flex justify-center items-center bg-primary p-4 text-center;
+        .copyright-text {
+            @apply m-0 text-black text-sm sm:text-base;
+        }
+    }
+}
+
+.back-to-top {
+    @apply hidden fixed bottom-28 sm:bottom-20 right-4 sm:right-8 z-50 border-0 outline-none bg-primary text-white shadow-lg
+    cursor-pointer p-4 rounded-full text-base hover:bg-secondary
+    flex-col justify-center items-center;
+    & svg {
+        @apply w-5 h-5 -rotate-90;
+    }
+}
+
+video {
+    @apply aspect-video object-cover object-center w-full cursor-pointer;
+}
+
+
+.flex-modal {
+    @apply flex fixed inset-0 justify-center items-center z-50 p-4 left-0 top-0 w-full h-full bg-black;
+    .modal-content {
+        @apply relative bg-[#fefefe] m-auto p-0 w-full lg:w-[80%] max-w-[1200px];
+    }
+    .close {
+        @apply text-white absolute top-[10px] right-[25px] 3xl:right-[15%] text-[35px] font-bold z-10
+        hover:text-[#999] hover:cursor-pointer
+        focus:text-[#999] focus:cursor-pointer;
+    }
+    .mySlides {
+        @apply hidden h-[calc(100vh-32px)] overflow-hidden bg-black;
+        & img {
+            @apply w-full h-full object-contain;
+        }
+    }
+    .cursor {
+        @apply cursor-pointer;
+    }
+    .prev, .next {
+        @apply cursor-pointer absolute top-1/2 w-auto p-4 -mt-[50px] text-white
+        font-bold text-xl;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .numbertext {
+        @apply text-[#f2f2f2] text-xs py-2 px-3 absolute top-0;
+    }
+    .demo {
+        opacity: 0.6;
+    }
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+    img.hover-shadow {
+        transition: 0.3s;
+    }
+    .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}

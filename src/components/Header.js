@@ -1,0 +1,48 @@
+import Link from "next/link";
+import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
+
+function Header () {
+    const router = useRouter();
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(prev => !prev);
+    };
+
+    useEffect(() => {
+        if (menuOpen) {
+        document.body.style.position = 'fixed';
+        } else {
+        document.body.style.position = '';
+        }
+        return () => {
+        document.body.style.position = '';
+        };
+    }, [menuOpen]);
+
+    return (
+        <header className="header-main">
+            <nav className={`topnav${menuOpen ? " open" : ""}`} id="myTopnav">
+                <div className="logo-wrapper">
+                    <Link href="/" className="brand-logo">
+                        <img src="/images/logo/balck-logo-tagline.png" alt="Good Luck Digital Photo Studio Logo" width="281" height="112" />
+                    </Link>
+                    <button className="icon" onClick={toggleMenu} aria-label="Toggle Menu">
+                        <span className="sr-only">Toggle Menu</span>
+                        <svg><use xlinkHref="/images/primary-icons.svg#bars-3"></use></svg>
+                    </button>
+                </div>
+                <div className="menu-wrapper">
+                    <Link href="/" className={`nav-item ${router.pathname === '/' ? 'active' : ''}`}>Home</Link>
+                    <Link href="/portfolio" className={`nav-item ${router.pathname === '/portfolio' ? 'active' : ''}`}>Portfolio</Link>
+                    <Link href="/services" className={router.pathname === '/services' ? 'nav-item active' : 'nav-item'}>Services</Link>
+                    <Link href="/about" className={router.pathname === '/about' ? 'nav-item active' : 'nav-item'}>About Us</Link>
+                    <Link href="/contact" className={router.pathname === '/contact' ? 'nav-item active' : 'nav-item'}>Contact Us</Link>
+                </div>
+            </nav>
+        </header>
+    );
+}
+
+export default Header;
