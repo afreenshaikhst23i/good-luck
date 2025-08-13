@@ -1,4 +1,5 @@
 import Quote from "@/components/Quote";
+import Image from "next/image";
 
 function About() {
     return (
@@ -22,13 +23,13 @@ function About() {
                             </p>
                             <p>At Good Luck Digital Photo Studio, 
                                 we are dedicated to preserving the authenticity of each moment, 
-                                whether it's a tender embrace, a spontaneous burst of laughter, 
+                                whether it&apos;s a tender embrace, a spontaneous burst of laughter, 
                                 or the quiet beauty of a still life. With an unwavering commitment 
                                 to artistic expression and a keen eye for detail, we embark on a 
                                 visual journey to encapsulate the essence of every subject.</p>
                         </div>
                         <div className="img-wrap">
-                            <img src="./images/zuber-shaikh.JPG" alt="Zuber Shaikh Photographer" className="w-full" width="518" height="776" />
+                            <Image src="./images/zuber-shaikh.JPG" alt="Zuber Shaikh Photographer" className="w-full" width={518} height={776} />
                         </div>
                     </div>
                 </div>

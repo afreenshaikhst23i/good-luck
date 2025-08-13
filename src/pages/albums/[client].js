@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import albumsData from "../../data/albumsData";
 import FlexBox from "../../components/FlexBox";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function AlbumPage() {
   const router = useRouter();
@@ -29,12 +30,12 @@ export default function AlbumPage() {
                 <p className="d-text">{album.title}</p>
               </div>
               <div className="portfolio-detail-img">
-                <img
+                <Image
                   src={album.albumCover}
                   className="w-full"
                   alt="Wedding Photography"
-                  width="478"
-                  height="717"
+                  width={478}
+                  height={717}
                 />
               </div>
             </div>
@@ -48,7 +49,7 @@ export default function AlbumPage() {
                       key={idx}
                       onClick={() => openModal(idx)}
                     >
-                      <img
+                      <Image
                         src={img}
                         alt={`${album.title} ${idx + 1}`}
                         className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"

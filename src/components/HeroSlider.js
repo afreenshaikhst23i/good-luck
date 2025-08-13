@@ -1,13 +1,8 @@
-// components/HeroSlider.jsx
 import React from 'react';
-
-// Import Swiper React components
+import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper modules from 'swiper/modules' (correct for v11+)
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -33,7 +28,7 @@ export default function HeroSlider() {
                 >
                 {slides.map(({ src, alt }, index) => (
                     <SwiperSlide key={index}>
-                    <img
+                    <Image
                         src={src}
                         alt={alt}
                         width={1903}

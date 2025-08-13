@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 export default function FlexBox({ images, startIndex, onClose }) {
   const [slideIndex, setSlideIndex] = useState(startIndex);
@@ -37,7 +38,7 @@ export default function FlexBox({ images, startIndex, onClose }) {
         {images.map((img, i) => (
           <div key={i} className="mySlides" style={{ display: i === slideIndex ? "block" : "none" }}>
             <div className="numbertext">{`${i + 1} / ${images.length}`}</div>
-            <img src={img.src} alt={img.alt} className="w-full" width={1200} height={929} loading="lazy" />
+            <Image src={img.src} alt={img.alt} className="w-full" width={1200} height={929} loading="lazy" />
           </div>
         ))}
 

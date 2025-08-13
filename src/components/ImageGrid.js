@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FlexBox from "./FlexBox";
+import Image from "next/image";
 
 export default function ImageGrid() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -37,7 +38,7 @@ export default function ImageGrid() {
             className="grid-list-item"
             onClick={() => openModal(i)}
           >
-            <img
+            <Image
               src={img.src}
               alt={img.alt}
               className="hover-shadow cursor w-full"

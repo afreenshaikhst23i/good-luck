@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
+import Image from "next/image";
 
 function Header () {
     const router = useRouter();
@@ -26,7 +27,7 @@ function Header () {
             <nav className={`topnav${menuOpen ? " open" : ""}`} id="myTopnav">
                 <div className="logo-wrapper">
                     <Link href="/" className="brand-logo">
-                        <img src="/images/logo/balck-logo-tagline.png" alt="Good Luck Digital Photo Studio Logo" width="281" height="112" />
+                        <Image src="/images/logo/balck-logo-tagline.png" alt="Good Luck Digital Photo Studio Logo" width={281} height={112} />
                     </Link>
                     <button className="icon" onClick={toggleMenu} aria-label="Toggle Menu">
                         <span className="sr-only">Toggle Menu</span>

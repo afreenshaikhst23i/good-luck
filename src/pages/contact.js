@@ -1,4 +1,5 @@
 import Quote from "@/components/Quote";
+import Image from "next/image";
 
 function Contact() {
     return(
@@ -11,7 +12,7 @@ function Contact() {
                 <div class="container">
                     <div class="left-fifty-wrapper">
                         <div class="text-wrap">
-                            <p>Let's capture the conversation.</p>
+                            <p>Let&apos;s capture the conversation.</p>
                             <p>Have a vision, a question, 
                                 or a moment you want to share? Our lens is ready, and so are we.</p>
                             <p class="cont-heading">Contact Us</p>
@@ -28,7 +29,7 @@ function Contact() {
                             </address>
                         </div>
                         <div class="img-wrap">
-                            <img src="./images/contact-1.jpg" className="w-full" alt="Wedding Photography" width="518" height="642" />
+                            <Image src="./images/contact-1.jpg" className="w-full" alt="Wedding Photography" width={518} height={642} />
                         </div>
                     </div>
                 </div>

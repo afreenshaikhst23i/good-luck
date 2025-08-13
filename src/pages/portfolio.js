@@ -1,6 +1,7 @@
 import Quote from "@/components/Quote";
 import Link from "next/link";
 import albumsData from "../data/albumsData";
+import Image from "next/image";
 
 function Portfolio() {
     return (
@@ -14,7 +15,7 @@ function Portfolio() {
                     {albumsData.map((album) => (
                     <div className="grid-list-item" key={album.slug}>
                         <Link href={`/albums/${album.slug}`}>
-                        <img
+                        <Image
                             src={album.cover}
                             alt={album.title}
                             width={592}
