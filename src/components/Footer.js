@@ -7,7 +7,12 @@ function Footer() {
                 <div className="footer-wrapper">
                     <div className="footer-item">
                         <div className="footer-logo">
-                            <Image src="/images/logo/balck-logo-tagline.png" alt="Good Luck Digital Photo Studio Logo" width={250} height={100} />
+                            <Image 
+                                src="/images/logo/black-logo-tagline.png" 
+                                alt="Good Luck Digital Photo Studio Logo" 
+                                priority
+                                placeholder="empty"
+                                width={250} height={100} />
                         </div>
                     </div>
                     <div className="footer-item">

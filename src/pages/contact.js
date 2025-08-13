@@ -29,7 +29,7 @@ function Contact() {
                             </address>
                         </div>
                         <div class="img-wrap">
-                            <Image src="./images/contact-1.jpg" className="w-full" alt="Wedding Photography" width={518} height={642} />
+                            <Image src="/images/contact.jpg" className="w-full" alt="Wedding Photography" width={518} height={642} />
                         </div>
                     </div>
                 </div>

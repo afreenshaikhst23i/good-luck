@@ -76,7 +76,7 @@ body {
         .brand-logo {
             @apply flex sm:justify-center sm:items-center sm:pt-5;
             & img {
-                @apply w-1/2 sm:w-[15%];
+                @apply w-1/2 sm:w-[52%];
             }
         }
         .icon {

@@ -27,7 +27,12 @@ function Header () {
             <nav className={`topnav${menuOpen ? " open" : ""}`} id="myTopnav">
                 <div className="logo-wrapper">
                     <Link href="/" className="brand-logo">
-                        <Image src="/images/logo/balck-logo-tagline.png" alt="Good Luck Digital Photo Studio Logo" width={281} height={112} />
+                        <Image 
+                            src="/images/logo/black-logo-tagline.png" 
+                            alt="Good Luck Digital Photo Studio Logo" 
+                            priority
+                            placeholder="empty"
+                            width={281} height={112} />
                     </Link>
                     <button className="icon" onClick={toggleMenu} aria-label="Toggle Menu">
                         <span className="sr-only">Toggle Menu</span>

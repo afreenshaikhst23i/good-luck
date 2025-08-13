@@ -26,7 +26,7 @@ function Services() {
                         </div>
                         <div className="img-wrap">
                             <h2 className="service-heading">Wedding Photography</h2>
-                            <Image src="./images/amrin-shabbir/landscape-1.JPG" alt="Wedding Photography" className="service-img" width={518} height={345} />
+                            <Image src="/images/amrin-shabbir/landscape-1.JPG" alt="Wedding Photography" className="service-img" width={518} height={345} />
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ function Services() {
                         </div>
                         <div className="img-wrap">
                             <h2 className="service-heading">Pre-wedding Photography</h2>
-                            <Image src="./images/service-pre-wedding.jpg" alt="Pre-wedding Photography" className="service-img" width={518} height={345} />
+                            <Image src="/images/service-pre-wedding.jpg" alt="Pre-wedding Photography" className="service-img" width={518} height={345} />
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ function Services() {
                         </div>
                         <div className="img-wrap">
                             <h2 className="service-heading">Product Photography</h2>
-                            <Image src="./images/service-product.jpg" alt="Product Photography" className="service-img" width={518} height={345} />
+                            <Image src="/images/service-product.jpg" alt="Product Photography" className="service-img" width={518} height={345} />
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ function Services() {
                         </div>
                         <div className="img-wrap">
                             <h2 className="service-heading">Events Photography</h2>
-                            <Image src="./images/service-birthday.jpg" alt="Events Photography" className="service-img" width={518} height={345} />
+                            <Image src="/images/service-birthday.jpg" alt="Events Photography" className="service-img" width={518} height={345} />
                         </div>
                     </div>
                 </div>
