@@ -6,7 +6,7 @@ function Services() {
         <>
             <Quote 
                 heading="Our Services"
-                text="With a passion for storytelling and an unwavering commitment to excellence, we offer a range of photography services tailored to meet your unique needs."
+                text="With a passion for storytelling and an unwavering commitment to excellence, we offer a range of photography services tailored to meet your unique needs"
             />
             
             <section className="fifty-section service-section">

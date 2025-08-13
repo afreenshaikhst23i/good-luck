@@ -8,7 +8,7 @@ function Footer() {
                     <div className="footer-item">
                         <div className="footer-logo">
                             <Image 
-                                src="/images/logo/black-logo-tagline.png" 
+                                src="/images/logo/black-logo-tagline.svg" 
                                 alt="Good Luck Digital Photo Studio Logo" 
                                 priority
                                 placeholder="empty"
@@ -30,9 +30,9 @@ function Footer() {
                             <a className="contact" href="tel:9004768168">
                                 <svg><use xlinkHref="/images/primary-icons.svg#phone"></use></svg>
                                 9004768168</a>
-                            <a className="contact" target="_blank" href="https://www.instagram.com/goodluck.digital.photo.studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                            <a className="contact" target="_blank" href="https://www.instagram.com/goodluck.dps/">
                                 <svg><use xlinkHref="/images/social-icons.svg#instagram"></use></svg>
-                                goodluck.digital.photo.studio</a>
+                                goodluck.dps</a>
                             <a className="contact" href="mailto:goodluckstudio1968@gmail.com">
                                 <svg><use xlinkHref="/images/primary-icons.svg#mail"></use></svg>
                                 goodluckstudio1968@gmail.com</a>
@@ -41,7 +41,7 @@ function Footer() {
                 </div>
             </div>
             <div className="copyright">
-                <p className="copyright-text">© 2024 Good Luck Digital Photo Studio, All Rights Reserved</p>
+                <p className="copyright-text">© 2025 Good Luck Digital Photo Studio - All Rights Reserved</p>
             </div>
         </footer>
     );

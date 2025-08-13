@@ -52,6 +52,8 @@ export default function AlbumPage() {
                       <Image
                         src={img}
                         alt={`${album.title} ${idx + 1}`}
+                        width={478}
+                        height={717}
                         className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     </div>

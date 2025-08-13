@@ -8,7 +8,7 @@ function Portfolio() {
         <>
             <Quote 
                 heading="Our Portfolio"
-                text="Join us on a captivating journey where each photograph serves as a chapter in the enchanting tale of life, meticulously written with the interplay of light and shadows."
+                text="Join us on a captivating journey where each photograph becomes a chapter in life’s enchanting story, written with light and shadow"
             />
             <section className="photo-grid-section portfolio">
                 <div className="grid-list">

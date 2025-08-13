@@ -9,7 +9,7 @@ export default function Home() {
             <HeroSlider />
             <Quote
                 heading="Every photograph is a journey through time and emotion"
-                text="Through the lens, we not only capture images but also the emotions, the fleeting moments, and the profound stories that define the human experience."
+                text="Through the lens, we not only capture images but also the emotions, the fleeting moments, and the profound stories that define the human experience"
             />
             <ImageGrid />
             <Films />

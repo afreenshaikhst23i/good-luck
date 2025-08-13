@@ -6,7 +6,7 @@ function Contact() {
         <>
             <Quote 
                 heading="Contact Us"
-                text="Through the lens, we not only capture images but also the emotions, the fleeting moments, and the profound stories that define the human experience."
+                text="Through the lens, we not only capture images but also the emotions, the fleeting moments, and the profound stories that define the human experience"
             />
             <section class="fifty-section contact-section">
                 <div class="container">

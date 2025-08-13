@@ -6,7 +6,7 @@ function About() {
         <>
             <Quote 
                 heading="About Us"
-                text="As a passionate and dedicated photographer, We strive to capture the essence of each fleeting moment, transforming them into timeless visual narratives."
+                text="As a passionate and dedicated photographer, We strive to capture the essence of each fleeting moment, transforming them into timeless visual narratives"
             />
             <section className="fifty-section about-section">
                 <div className="container">

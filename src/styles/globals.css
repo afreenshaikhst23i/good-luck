@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
 @import "tailwindcss";
 
 @theme {
@@ -11,7 +15,7 @@
     --color-primary: #ed6079;
     --color-secondary: #8d818c;
 
-    --font-body: Libertinus Serif, ui-sans-serif, system-ui;
+    --font-body: Merriweather , ui-sans-serif, system-ui;
     --font-album-cover: Niconne, ui-sans-serif, system-ui;
 
     --breakpoint-sm: 40rem; 
@@ -49,14 +53,13 @@
 }
 
 body {
-    @apply w-full font-body;
+    @apply w-full font-body text-[#333333];
 }
 .container {
     max-width: 1100px;
 }
 .primary-heading {
-    @apply text-primary text-[32px] sm:text-[40px] font-bold text-center relative mb-8;
-    letter-spacing: 2px;
+    @apply text-primary text-[32px] sm:text-[40px] text-center relative mb-8 font-album-cover;
 }
 .view-more {
     @apply flex justify-center items-center mt-8;
@@ -76,7 +79,7 @@ body {
         .brand-logo {
             @apply flex sm:justify-center sm:items-center sm:pt-5;
             & img {
-                @apply w-1/2 sm:w-[52%];
+                @apply w-[150px] sm:w-[200px];
             }
         }
         .icon {
@@ -87,17 +90,17 @@ body {
         }
     }
     .menu-wrapper {
-        @apply hidden sm:flex flex-row sm:mt-6 border-y border-gray-300;
+        @apply hidden sm:flex flex-row sm:mt-6 border-y border-gray-300 w-full lg:w-[80%] md:justify-center;
         .nav-item {
-            @apply inline-block text-gray-700 py-4 px-12 text-center text-base tracking-[2px] hover:underline;
+            @apply inline-block text-gray-600 py-4 px-8 sm:px-5 lg:px-10 text-center text-base tracking-[2px] hover:text-gray-950;
         }
         .nav-item.active {
-            @apply underline;
+            @apply text-gray-950;
         }
     }
     .topnav.open {
         .menu-wrapper {
-            @apply flex flex-col absolute top-[95px] left-0 w-full bg-white z-10 shadow-[0px_4px_10px_-4px_#9b9898] h-full;
+            @apply flex flex-col absolute top-[91px] left-0 w-full bg-white z-10 shadow-[0px_4px_10px_-4px_#9b9898] h-full;
         }
     }
 }
@@ -116,7 +119,7 @@ body {
         transition: 1s;
     }
     .swiper-button-next:after, .swiper-button-prev:after {
-        @apply text-base font-extrabold text-gray-800;
+        @apply text-base font-extrabold;
     }
 }
 .slideshow-section:hover {
@@ -131,12 +134,12 @@ body {
 .quote-section {
     @apply pb-0 pt-16 sm:py-16;
     .quote-wrapper {
-        @apply flex justify-center flex-col items-center text-center gap-2 sm:gap-[30px] relative;
+        @apply flex justify-center flex-col items-center text-center gap-3 relative;
         .the-quote {
-            @apply text-[32px] sm:text-[40px] m-0 font-extrabold text-primary;
+            @apply text-[32px] sm:text-[40px] m-0 text-primary font-album-cover;
         }
         .the-sub-text {
-            @apply text-[26px] sm:text-3xl m-0 text-secondary;
+            @apply text-xl m-0 lg:max-w-[80%];
         }
         .quote-watermark {
             @apply absolute left-4;
@@ -162,7 +165,7 @@ body {
         }
     }
     .grid-name {
-        @apply text-center pt-4 text-2xl;
+        @apply text-center pt-3 text-[26px] text-gray-950; 
     }
 }
 .photo-grid-section.portfolio {
@@ -231,27 +234,27 @@ body {
     .right-fifty-wrapper {
         @apply flex flex-col-reverse sm:flex-row gap-8 items-center justify-center;
         & img {
-            @apply sm:shadow-[14px_-12px_15px_0px_#ed607987];
+            @apply sm:shadow-[20px_-18px_0_0_#e3b3bb87];
         }
     }
     .left-fifty-wrapper {
         @apply flex flex-col-reverse sm:flex-row-reverse gap-8 items-center justify-center;
         & img {
-            @apply sm:shadow-[-14px_-12px_15px_0px_#ed607987];
+            @apply sm:shadow-[-20px_-18px_0_0_#e3b3bb87];
         }
     }
     .text-wrap {
-        @apply basis-1/2;
+        @apply basis-full w-full sm:basis-1/2;
     }
     .img-wrap {
-        @apply basis-1/2;
+        @apply basis-full w-full sm:basis-1/2;
     }
 }
 .about-section {
     .text-wrap {
-        @apply text-base sm:text-lg text-gray-700 flex flex-col gap-4;
+        @apply text-base sm:text-lg flex flex-col gap-4;
         & strong {
-            @apply italic text-gray-900;
+            @apply italic;
         }
     }
 }
@@ -259,9 +262,9 @@ body {
 .service-section {
     @apply py-10 overflow-hidden;
     .text-wrap {
-        @apply text-base sm:text-lg text-gray-700;
+        @apply text-base sm:text-lg;
         & strong {
-            @apply italic text-gray-900;
+            @apply italic;
         }
         .service-heading {
             @apply hidden sm:block;
@@ -277,7 +280,7 @@ body {
         }
     }
     .service-heading {
-        @apply text-lg sm:text-xl pb-4 font-bold;
+        @apply text-lg sm:text-xl pb-4 font-bold text-gray-950;
     }
     .service-text {
         @apply text-base;
@@ -304,33 +307,34 @@ body {
 
 .contact-section {
     .text-wrap {
-        @apply text-base sm:text-lg text-gray-700;
+        @apply text-base sm:text-lg;
     }
     .cont-heading {
-        @apply text-xl pt-6 pb-2 font-bold;
+        @apply text-xl pt-10 pb-1 font-bold text-gray-950;
     }
     .cont-details {
-        @apply flex flex-col gap-2;
+        @apply flex flex-col gap-1;
     }
 }
 
 .footer-main {
+    @apply mt-10;
     .footer-wrapper {
-        @apply flex flex-col justify-center sm:items-center py-6 sm:py-10 gap-4;
+        @apply flex flex-col justify-center sm:items-center py-6 sm:py-10 gap-4 text-gray-950;
         .footer-item {
             address {
-                @apply text-base sm:text-xl;
+                @apply text-base sm:text-lg;
             }
             .footer-logo {
-                @apply pb-2 sm:pb-4 flex flex-col justify-center items-center;
+                @apply pb-2 sm:pb-4 flex flex-col justify-center sm:items-center;
                 & img {
-                    @apply w-[200px] sm:w-[250px];
+                    @apply w-[200px];
                 }
             }
             .contact-wrap {
                 @apply flex flex-col lg:flex-row gap-2 lg:gap-10;
                 .contact {
-                    @apply flex flex-row items-center gap-2 text-base sm:text-xl;
+                    @apply flex flex-row items-center gap-2 text-base sm:text-lg;
                     & svg {
                         @apply w-5 h-5 shrink-0;
                     }
@@ -339,9 +343,9 @@ body {
         }
     }
     .copyright {
-        @apply flex justify-center items-center bg-primary p-4 text-center;
+        @apply flex justify-center items-center bg-[#e3b3bb87] p-4 text-center;
         .copyright-text {
-            @apply m-0 text-black text-sm sm:text-base;
+            @apply m-0 text-sm sm:text-base text-gray-950;
         }
     }
 }

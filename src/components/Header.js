@@ -28,7 +28,7 @@ function Header () {
                 <div className="logo-wrapper">
                     <Link href="/" className="brand-logo">
                         <Image 
-                            src="/images/logo/black-logo-tagline.png" 
+                            src="/images/logo/black-logo-tagline.svg" 
                             alt="Good Luck Digital Photo Studio Logo" 
                             priority
                             placeholder="empty"
