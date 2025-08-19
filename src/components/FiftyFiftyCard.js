@@ -1,4 +1,5 @@
 import servicesData from "@/data/FiftyCardData";
+import Image from "next/image";
 
 function FiftyCard( wrapperClass = "left-fifty-wrapper") {
     return (
