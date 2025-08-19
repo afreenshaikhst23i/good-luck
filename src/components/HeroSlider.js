@@ -8,10 +8,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const slides = [
-  { src: '/images/home-slider/landscape-1.JPG', alt: 'Wedding Photography 1' },
-  { src: '/images/home-slider/landscape-2.JPG', alt: 'Wedding Photography 2' },
-  { src: '/images/home-slider/landscape-3.JPG', alt: 'Wedding Photography 3' },
-  { src: '/images/home-slider/landscape-4.jpg', alt: 'Wedding Photography 4' },
+  { src: '/images/home-slider/landscape-1.JPG', alt: 'Wedding Photography - Groom and Bride Smiling at each other' },
+  { src: '/images/home-slider/landscape-2.JPG', alt: 'Wedding Photography - Groom and Bride showing their engagement rings' },
+  { src: '/images/home-slider/landscape-3.JPG', alt: 'Wedding Photography - Bride and Groom showing brides mangalsutra' },
+  { src: '/images/home-slider/landscape-4.jpg', alt: 'Wedding Photography - Bride and Groom sharing a laught together' },
 ];
 
 export default function HeroSlider() {

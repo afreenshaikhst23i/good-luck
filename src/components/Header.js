@@ -36,7 +36,9 @@ function Header () {
                     </Link>
                     <button className="icon" onClick={toggleMenu} aria-label="Toggle Menu">
                         <span className="sr-only">Toggle Menu</span>
-                        <svg><use xlinkHref="/images/primary-icons.svg#bars-3"></use></svg>
+                        <svg aria-hidden="true" width="28" height="28" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                        </svg>
                     </button>
                 </div>
                 <div className="menu-wrapper">

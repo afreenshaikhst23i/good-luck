@@ -25,16 +25,16 @@ function Footer() {
                     <div className="footer-item">
                         <div className="contact-wrap">
                             <a className="contact" href="tel:9029913925">
-                                <svg><use xlinkHref="/images/primary-icons.svg#phone"></use></svg>
+                                <Image src="/images/social-icons/phone.svg" alt="Call Us" width={20} height={20} />
                                 9029913925</a>
                             <a className="contact" href="tel:9004768168">
-                                <svg><use xlinkHref="/images/primary-icons.svg#phone"></use></svg>
+                                <Image src="/images/social-icons/phone.svg" alt="Call Us" width={20} height={20} />
                                 9004768168</a>
                             <a className="contact" target="_blank" href="https://www.instagram.com/goodluck.dps/">
-                                <svg><use xlinkHref="/images/social-icons.svg#instagram"></use></svg>
+                                <Image src="/images/social-icons/instagram.svg" alt="Call Us" width={20} height={20} />
                                 goodluck.dps</a>
                             <a className="contact" href="mailto:goodluckstudio1968@gmail.com">
-                                <svg><use xlinkHref="/images/primary-icons.svg#mail"></use></svg>
+                                <Image src="/images/social-icons/mail.svg" alt="Call Us" width={20} height={20} />
                                 goodluckstudio1968@gmail.com</a>
                         </div>
                     </div>

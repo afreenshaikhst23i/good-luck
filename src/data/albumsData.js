@@ -1,4 +1,3 @@
-// albumsData.js
 const albumsData = [
   {
     slug: "amrin-shabbir",
