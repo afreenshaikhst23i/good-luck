@@ -2,7 +2,7 @@ import Films from "@/components/Films";
 import ImageGrid from "@/components/ImageGrid";
 import HeroSlider from "@/components/HeroSlider";
 import Quote from "@/components/Quote";
-import SEO from "@/components/Seo";
+import SEO from "@/components/SEO";
 
 export default function Home() {
     return (

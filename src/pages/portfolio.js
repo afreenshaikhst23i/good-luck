@@ -2,7 +2,7 @@ import Quote from "@/components/Quote";
 import Link from "next/link";
 import albumsData from "../data/albumsData";
 import Image from "next/image";
-import SEO from "@/components/Seo";
+import SEO from "@/components/SEO";
 
 function Portfolio() {
     return (
