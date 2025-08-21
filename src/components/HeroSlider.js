@@ -33,7 +33,7 @@ export default function HeroSlider() {
                         alt={alt}
                         width={1903}
                         height={953}
-                        loading="lazy"
+                        priority
                     />
                     </SwiperSlide>
                 ))}

@@ -1,9 +1,11 @@
 import Quote from "@/components/Quote";
+import SEO from "@/components/Seo";
 import Image from "next/image";
 
 function Services() {
     return (
         <>
+            <SEO page="services" />
             <Quote 
                 heading="Our Services"
                 text="With a passion for storytelling and an unwavering commitment to excellence, we offer a range of photography services tailored to meet your unique needs"

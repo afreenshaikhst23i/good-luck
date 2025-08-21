@@ -1,9 +1,11 @@
 import Quote from "@/components/Quote";
+import SEO from "@/components/Seo";
 import Image from "next/image";
 
 function About() {
     return (
         <>
+            <SEO page="about" />
             <Quote 
                 heading="About Us"
                 text="As a passionate and dedicated photographer, We strive to capture the essence of each fleeting moment, transforming them into timeless visual narratives"

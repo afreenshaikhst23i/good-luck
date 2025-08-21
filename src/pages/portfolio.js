@@ -2,10 +2,12 @@ import Quote from "@/components/Quote";
 import Link from "next/link";
 import albumsData from "../data/albumsData";
 import Image from "next/image";
+import SEO from "@/components/Seo";
 
 function Portfolio() {
     return (
         <>
+            <SEO page="portfolio" />
             <Quote 
                 heading="Our Portfolio"
                 text="Join us on a captivating journey where each photograph becomes a chapter in life’s enchanting story, written with light and shadow"

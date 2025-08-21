@@ -147,7 +147,7 @@ body {
 
 /* IMAGE GRID SECTION CSS STARTS HERE */
 .photo-grid-section {
-    @apply px-4 sm:px-8 py-10;
+    @apply px-4 sm:px-8 py-16 lg:py-10;
     .grid-list {
         @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8;
         .grid-list-item {
