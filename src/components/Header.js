@@ -42,11 +42,11 @@ function Header () {
                     </button>
                 </div>
                 <div className="menu-wrapper">
-                    <Link href="/" className={`nav-item ${router.pathname === '/' ? 'active' : ''}`}>Home</Link>
-                    <Link href="/portfolio" className={`nav-item ${router.pathname === '/portfolio' ? 'active' : ''}`}>Portfolio</Link>
-                    <Link href="/services" className={router.pathname === '/services' ? 'nav-item active' : 'nav-item'}>Services</Link>
-                    <Link href="/about" className={router.pathname === '/about' ? 'nav-item active' : 'nav-item'}>About Us</Link>
-                    <Link href="/contact" className={router.pathname === '/contact' ? 'nav-item active' : 'nav-item'}>Contact Us</Link>
+                    <Link href="/" className={`nav-item ${router.pathname === '/' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>Home</Link>
+                    <Link href="/portfolio" className={`nav-item ${router.pathname === '/portfolio' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>Portfolio</Link>
+                    <Link href="/services" className={router.pathname === '/services' ? 'nav-item active' : 'nav-item'} onClick={() => setMenuOpen(false)}>Services</Link>
+                    <Link href="/about" className={router.pathname === '/about' ? 'nav-item active' : 'nav-item'} onClick={() => setMenuOpen(false)}>About Us</Link>
+                    <Link href="/contact" className={router.pathname === '/contact' ? 'nav-item active' : 'nav-item'} onClick={() => setMenuOpen(false)}>Contact Us</Link>
                 </div>
             </nav>
         </header>

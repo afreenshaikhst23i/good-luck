@@ -10,7 +10,7 @@ function Portfolio() {
             <SEO page="portfolio" />
             <Quote 
                 heading="Our Portfolio"
-                text="Join us on a captivating journey where each photograph becomes a chapter in life’s enchanting story, written with light and shadow"
+                text="Explore our portfolio of wedding photography and videography. From candid shots to cinematic wedding films, our work showcases creativity, passion, and attention to detail"
             />
             <section className="photo-grid-section portfolio">
                 <div className="grid-list">
@@ -19,7 +19,7 @@ function Portfolio() {
                         <Link href={`/albums/${album.slug}`}>
                         <Image
                             src={album.cover}
-                            alt={album.title}
+                            alt={album.alt}
                             width={592}
                             height={394}
                             style={{ width: "100%" }}

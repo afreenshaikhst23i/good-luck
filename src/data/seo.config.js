@@ -10,23 +10,23 @@ const SEO_CONFIG = {
     },
 
     home: {
-        title: "Wedding Photography and Cinematography",
+        title: "Wedding Photography and Cinematography | Good Luck Digital Photo Studio",
         description:
-            "Explore a world of visual storytelling through the lens of Good Luck Digital Photo Studio. Specializing in Wedding photography and cinematography.",
+            "Good Luck Digital Photo Studio – Wedding Photography & Cinematic Videography in Mumbai. With 25+ years of experience, we capture candid moments, emotional ceremonies, and timeless wedding films for couples across India.",
             image: `${siteURL}/images/og-image.jpg`,
             url: `${siteURL}/`,
     },
 
     portfolio: {
-        title: "Portfolio",
+        title: "Wedding Photography Portfolio | Good Luck Digital Photo Studio",
         description:
-            "View our portfolio of wedding photography and cinematography. Stunning captures that turn moments into timeless memories.",
+            "Explore real weddings and highlight films—candid moments, bridal portraits, couple shoots, and cinematic edits by Good Luck Studio.",
             image: `${siteURL}/images/portfolio-cover.jpg`,
             url: `${siteURL}/portfolio`,
     },
 
     services: {
-        title: "Photography & Videography Services",
+        title: "Photography & Videography Services | Good Luck Digital Photo Studio",
         description:
             "Discover our professional photography and videography services including weddings, pre-weddings, events, and cinematography. We bring creativity and precision to every moment.",
             image: `${siteURL}/images/services-cover.jpg`,
@@ -34,15 +34,15 @@ const SEO_CONFIG = {
     },
 
     about: {
-        title: "About Us",
+        title: "About Good Luck Digital Photo Studio | 25+ Years",
         description:
-            "Learn more about Good Luck Digital Photo Studio. With over 25 years of experience, we specialize in weddings, events, and timeless photography.",
+            "A wedding photography and cinematography team with 25+ years of experience, delivering timeless images and films with a personal touch.",
             image: `${siteURL}/images/about-cover.jpg`,
             url: `${siteURL}/about`,
     },
 
     contact: {
-        title: "Contact",
+        title: "Contact Good Luck Studio | Wedding Photography & Video",
         description:
             "Get in touch with Good Luck Digital Photo Studio for wedding photography, videography, and events. Let's capture your special moments together.",
             image: `${siteURL}/images/contact-cover.jpg`,

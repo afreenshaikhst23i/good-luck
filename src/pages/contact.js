@@ -14,9 +14,8 @@ function Contact() {
                 <div className="container">
                     <div className="left-fifty-wrapper">
                         <div className="text-wrap">
-                            <p>Let&apos;s capture the conversation.</p>
-                            <p>Have a vision, a question, 
-                                or a moment you want to share? Our lens is ready, and so are we.</p>
+                            <p>Looking for a professional wedding photographer and videographer? Let&apos;s connect to discuss your dream wedding photography and cinematic film.</p>
+                            <p>Our lens is ready, and so are we.</p>
                             <p className="cont-heading">Contact Us</p>
                             <div className="cont-details">
                                 <a className="contact" href="tel:9029913925"> <i className="fa fa-phone"></i> 9029913925</a>

@@ -6,7 +6,7 @@ export default function SEO({ page }) {
 
   return (
     <Head>
-      <title>{meta.title} | Good Luck Digital Photo Studio</title>
+      <title>{meta.title}</title>
       <meta name="title" content={meta.title} />
       <meta name="description" content={meta.description} />
 

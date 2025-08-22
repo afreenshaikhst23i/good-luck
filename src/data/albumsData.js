@@ -2,6 +2,7 @@ const albumsData = [
   {
     slug: "amrin-shabbir",
     title: "Amrin Weds Shabbir",
+    alt: "Amrin and Shabbir Wedding photos",
     cover: "/images/amrin-shabbir/landscape-1.JPG",
     albumCover: "/images/amrin-shabbir/portrait-1.JPG",
     images: [
@@ -36,6 +37,7 @@ const albumsData = [
   {
     slug: "ganesh-priyanka",
     title: "Ganesh and Priyanka",
+    alt: "Ganesh and Priyanka engagement photos",
     cover: "/images/ganesh-more/landscape-14.JPG",
     albumCover: "/images/ganesh-more/album-1.JPG",
     images: [
@@ -60,6 +62,7 @@ const albumsData = [
   {
     slug: "sarika-manju",
     title: "Sarika Weds Manju",
+    alt: "Sarika and Manju wedding photos",
     cover: "/images/sarika-manju/landscape-3.JPG",
     albumCover: "/images/sarika-manju/album-1.JPG",
     images: [
@@ -114,6 +117,7 @@ const albumsData = [
   {
     slug: "haroon-simran",
     title: "Haroon Weds Simran",
+    alt: "Haroon and Simran wedding photos",
     cover: "/images/haroon-simran/landscape-1.JPG",
     albumCover: "/images/haroon-simran/album-6.JPG",
     images: [
@@ -137,6 +141,7 @@ const albumsData = [
   {
     slug: "mahek-faisal",
     title: "Mahek Weds Faisal",
+    alt: "Mahek Weds Faisal wedding photos",
     cover: "/images/mahek-faisal/landscape-1.JPG",
     albumCover: "/images/mahek-faisal/album-1.JPG",
     images: [
