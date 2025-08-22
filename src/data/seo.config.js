@@ -21,7 +21,7 @@ const SEO_CONFIG = {
         title: "Wedding Photography Portfolio | Good Luck Digital Photo Studio",
         description:
             "Explore real weddings and highlight films—candid moments, bridal portraits, couple shoots, and cinematic edits by Good Luck Studio.",
-            image: `${siteURL}/images/portfolio-cover.jpg`,
+            image: `${siteURL}/images/og-image.jpg`,
             url: `${siteURL}/portfolio`,
     },
 
@@ -29,7 +29,7 @@ const SEO_CONFIG = {
         title: "Photography & Videography Services | Good Luck Digital Photo Studio",
         description:
             "Discover our professional photography and videography services including weddings, pre-weddings, events, and cinematography. We bring creativity and precision to every moment.",
-            image: `${siteURL}/images/services-cover.jpg`,
+            image: `${siteURL}/images/og-image.jpg`,
             url: `${siteURL}/services`,
     },
 
@@ -37,7 +37,7 @@ const SEO_CONFIG = {
         title: "About Good Luck Digital Photo Studio | 25+ Years",
         description:
             "A wedding photography and cinematography team with 25+ years of experience, delivering timeless images and films with a personal touch.",
-            image: `${siteURL}/images/about-cover.jpg`,
+            image: `${siteURL}/images/og-image.jpg`,
             url: `${siteURL}/about`,
     },
 
@@ -45,7 +45,7 @@ const SEO_CONFIG = {
         title: "Contact Good Luck Studio | Wedding Photography & Video",
         description:
             "Get in touch with Good Luck Digital Photo Studio for wedding photography, videography, and events. Let's capture your special moments together.",
-            image: `${siteURL}/images/contact-cover.jpg`,
+            image: `${siteURL}/images/og-image.jpg`,
             url: `${siteURL}/contact`,
     },
 };
