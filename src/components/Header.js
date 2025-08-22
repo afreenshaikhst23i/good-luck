@@ -32,7 +32,8 @@ function Header () {
                             alt="Good Luck Digital Photo Studio Logo" 
                             priority
                             placeholder="empty"
-                            width={281} height={112} />
+                            width={281} height={112}
+                            onClick={() => setMenuOpen(false)} />
                     </Link>
                     <button className="icon" onClick={toggleMenu} aria-label="Toggle Menu">
                         <span className="sr-only">Toggle Menu</span>

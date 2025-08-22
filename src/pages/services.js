@@ -75,7 +75,7 @@ function Services() {
                         </div>
                         <div className="img-wrap">
                             <h2 className="service-heading">Product Photography</h2>
-                            <Image src="/images/service-product.jpg" alt="Product Photography" className="service-img" width={518} height={345} />
+                            <Image src="/images/service-product.jpg" alt="Product Photography" className="service-img" width={518} height={292} />
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@ function Services() {
                         </div>
                         <div className="img-wrap">
                             <h2 className="service-heading">Events Photography</h2>
-                            <Image src="/images/service-birthday.jpg" alt="Events Photography" className="service-img" width={518} height={345} />
+                            <Image src="/images/service-birthday.jpg" alt="Events Photography" className="service-img" width={518} height={344} />
                         </div>
                     </div>
                 </div>

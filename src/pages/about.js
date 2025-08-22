@@ -31,7 +31,7 @@ function About() {
                                 visual journey to encapsulate the essence of every subject.</p>
                         </div>
                         <div className="img-wrap">
-                            <Image src="/images/zuber-shaikh.JPG" alt="Zuber Shaikh Photographer" className="w-full" width={518} height={776} />
+                            <Image src="/images/zuber-shaikh.JPG" alt="Zuber Shaikh Photographer" className="w-full" width={518} height={744} />
                         </div>
                     </div>
                 </div>
