@@ -25,7 +25,7 @@ export default function AlbumPage({ album, client }) {
             <div className="portfolio-detail-wrap">
               <div className="portfolio-detail-main">
                 <div className="portfolio-detail-text">
-                  <p className="d-text">{album.title}</p>
+                  <h1 className="d-text">{album.title}</h1>
                 </div>
                 <div className="portfolio-detail-img">
                   <Image
