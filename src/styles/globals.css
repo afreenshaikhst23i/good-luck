@@ -221,10 +221,19 @@ body {
 .films-section {
     @apply px-4 sm:px-8 py-10;
     .film-grid {
-        /* @apply grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8; */
+        @apply flex flex-col md:flex-row gap-4 sm:gap-8;
         .film-item {
-            @apply w-full lg:max-w-[50%] mx-auto;
+            @apply basis-0 grow mx-auto max-w-1/2 relative aspect-video shadow-lg overflow-hidden;
         }
+    }
+    .film-overlay {
+        @apply w-full h-full bg-black relative cursor-pointer overflow-hidden shadow-lg;
+    }
+    .film-overlay-button {
+        @apply absolute inset-0 flex items-center justify-center bg-black/20;
+    }
+    .film-logo {
+        @apply absolute top-2 right-2 z-10;
     }
 }
 

@@ -33,7 +33,8 @@ const nextConfig = {
                 script-src 'self' ${isDev ? "'unsafe-eval'" : ""};
                 style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net;
                 font-src 'self' https://fonts.gstatic.com data:;
-            `.replace(/\s{2,}/g, " ").trim(),
+                frame-src 'self' https://drive.google.com;
+              `.replace(/\s{2,}/g, " ").trim(),
           },
         ],
       },
