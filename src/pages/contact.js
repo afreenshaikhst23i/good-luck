@@ -1,5 +1,6 @@
-import Quote from "@/components/Quote";
-import SEO from "@/components/SEO";
+import FiftySection from "@/components/common/FiftyFiftyCard";
+import Quote from "@/components/common/Quote";
+import SEO from "@/components/layout/SEO";
 import Image from "next/image";
 
 function Contact() {
@@ -10,10 +11,12 @@ function Contact() {
                 heading="Contact Us"
                 text="Through the lens, we not only capture images but also the emotions, the fleeting moments, and the profound stories that define the human experience"
             />
-            <section className="fifty-section contact-section">
-                <div className="container">
-                    <div className="left-fifty-wrapper">
-                        <div className="text-wrap">
+            <FiftySection
+                sectionClass="contact-section"
+                alignment="left"
+                textContent=
+                    {
+                        <>
                             <p>Looking for a professional wedding photographer and videographer? Let&apos;s connect to discuss your dream wedding photography and cinematic film.</p>
                             <p>Our lens is ready, and so are we.</p>
                             <h2 className="cont-heading">Contact Us</h2>
@@ -37,13 +40,18 @@ function Contact() {
                                 Kurla - Andheri Road,
                                 Mumbai - 400070
                             </address>
-                        </div>
-                        <div className="img-wrap">
-                            <Image src="/images/contact.jpg" className="w-full" alt="Wedding Photography" width={518} height={642} />
-                        </div>
-                    </div>
-                </div>
-            </section>
+                        </>
+                    }
+                imageContent=
+                    {
+                        <Image 
+                            src="/images/contact.jpg" 
+                            alt="" 
+                            className="w-full" 
+                            priority
+                            width={518} height={642} />
+                    }
+            />
         </>
     );
 }

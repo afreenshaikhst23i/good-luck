@@ -1,8 +1,8 @@
-import Films from "@/components/Films";
-import ImageGrid from "@/components/ImageGrid";
-import HeroSlider from "@/components/HeroSlider";
-import Quote from "@/components/Quote";
-import SEO from "@/components/SEO";
+import Films from "@/components/sections/Films";
+import ImageGrid from "@/components/sections/ImageGrid";
+import HeroSlider from "@/components/sections/HeroSlider";
+import Quote from "@/components/common/Quote";
+import SEO from "@/components/layout/SEO";
 
 export default function Home() {
     return (

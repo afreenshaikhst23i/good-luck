@@ -1,6 +1,6 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import ScrollToTop from "@/components/ScrollToTop";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
+import ScrollToTop from "@/components/common/ScrollToTop";
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import FlexBox from "./FlexBox";
 import images  from "@/data/GridImages";
 import Image from "next/image";
+import FlexBox from "../common/FlexBox";
 
 export default function ImageGrid() {
   const [modalOpen, setModalOpen] = useState(false);

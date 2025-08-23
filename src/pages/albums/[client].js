@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import albumsData from "../../data/albumsData";
-import FlexBox from "../../components/FlexBox";
+import FlexBox from "../../components/common/FlexBox";
 import { useState } from "react";
 import Image from "next/image";
-import SEO from "@/components/SEO";
+import SEO from "@/components/layout/SEO";
 
 export default function AlbumPage({ album, client }) {
   const [modalOpen, setModalOpen] = useState(false);

@@ -1,5 +1,6 @@
-import Quote from "@/components/Quote";
-import SEO from "@/components/SEO";
+import FiftySection from "@/components/common/FiftyFiftyCard";
+import Quote from "@/components/common/Quote";
+import SEO from "@/components/layout/SEO";
 import Image from "next/image";
 
 function About() {
@@ -10,10 +11,13 @@ function About() {
                 heading="About Us"
                 text="As a passionate and dedicated photographer, We strive to capture the essence of each fleeting moment, transforming them into timeless visual narratives"
             />
-            <section className="fifty-section about-section">
-                <div className="container">
-                    <div className="right-fifty-wrapper">
-                        <div className="text-wrap">
+            <FiftySection
+                sectionClass="about-section"
+                alignment="right"
+                textContent=
+                    {
+                        <>
+                            <h2 className="text-2xl font-bold">A Legacy Since 1995</h2>
                             <p>
                                 I, Zuber Shaikh,
                                 welcomes you to Good Luck Digital Photo Studio, a visual journey steeped in a 
@@ -29,13 +33,18 @@ function About() {
                                 or the quiet beauty of a still life. With an unwavering commitment 
                                 to artistic expression and a keen eye for detail, we embark on a 
                                 visual journey to encapsulate the essence of every subject.</p>
-                        </div>
-                        <div className="img-wrap">
-                            <Image src="/images/zuber-shaikh.JPG" alt="Zuber Shaikh Photographer" className="w-full" width={518} height={744} />
-                        </div>
-                    </div>
-                </div>
-            </section>
+                        </>
+                    }
+                imageContent=
+                    {
+                        <Image 
+                            src="/images/zuber-shaikh.JPG" 
+                            alt="Portrait of Zuber Shaikh, professional wedding and event photographer at Good Luck Digital Photo Studio" 
+                            className="w-full" 
+                            priority
+                            width={518} height={744} />
+                    }
+            />
         </>
     );
 }

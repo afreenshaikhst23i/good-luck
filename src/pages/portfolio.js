@@ -1,8 +1,8 @@
-import Quote from "@/components/Quote";
+import Quote from "@/components/common/Quote";
 import Link from "next/link";
 import albumsData from "../data/albumsData";
 import Image from "next/image";
-import SEO from "@/components/SEO";
+import SEO from "@/components/layout/SEO";
 
 function Portfolio() {
     return (
@@ -22,6 +22,7 @@ function Portfolio() {
                             alt={album.alt}
                             width={592}
                             height={394}
+                            priority
                             style={{ width: "100%" }}
                         />
                         <h2 className="grid-name">{album.title}</h2>
