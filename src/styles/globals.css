@@ -221,9 +221,9 @@ body {
 .films-section {
     @apply px-4 sm:px-8 py-10;
     .film-grid {
-        @apply flex flex-col md:flex-row gap-4 sm:gap-8 flex-wrap;
+        @apply flex flex-row gap-4 sm:gap-8 flex-wrap;
         .film-item {
-            @apply basis-full lg:basis-[(calc(50%-16px))] grow mx-auto lg:max-w-[calc(50%-16px)] relative aspect-video shadow-lg overflow-hidden;
+            @apply basis-full lg:basis-[calc(50%-16px)] grow mx-auto lg:max-w-[calc(50%-16px)] relative aspect-video shadow-lg overflow-hidden;
         }
     }
     .film-overlay {
