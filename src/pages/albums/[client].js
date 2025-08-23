@@ -5,18 +5,11 @@ import { useState } from "react";
 import Image from "next/image";
 import SEO from "@/components/SEO";
 
-export default function AlbumPage() {
-  const router = useRouter();
-  const { client } = router.query;
-
+export default function AlbumPage({ album, client }) {
   const [modalOpen, setModalOpen] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
 
-  if (!router.isReady) return null;
-
-  const album = albumsData.find((a) => a.slug === client);
-
-  if (!album) return <p className="text-center mt-10">Loading...</p>;
+  if (!album) return <p className="text-center mt-10">Album not found</p>;
 
   const openModal = (index) => {
     setSlideIndex(index);
@@ -25,7 +18,7 @@ export default function AlbumPage() {
 
   return (
     <>
-      <SEO page={client} />
+       <SEO page={client} />
 
       <section className="portfolio-detail-section">
           <div className="container">
@@ -79,4 +72,25 @@ export default function AlbumPage() {
       )}
     </>
   );
+}
+
+
+export async function getStaticPaths() {
+  const paths = albumsData.map((album) => ({
+    params: { client: album.slug },
+  }));
+
+  return { paths, fallback: false };
+}
+
+// ✅ Provide album + client as props
+export async function getStaticProps({ params }) {
+  const album = albumsData.find((a) => a.slug === params.client) || null;
+
+  return {
+    props: {
+      album,
+      client: params.client,
+    },
+  };
 }
