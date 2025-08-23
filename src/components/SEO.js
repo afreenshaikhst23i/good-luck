@@ -2,7 +2,13 @@ import Head from "next/head";
 import SEO_CONFIG from "@/data/seo.config";
 
 export default function SEO({ page }) {
-  const meta = SEO_CONFIG[page] || SEO_CONFIG.default;
+  let meta = SEO_CONFIG[page];
+
+  if (!meta && SEO_CONFIG.albums?.[page]) {
+    meta = SEO_CONFIG.albums[page];
+  }
+
+  if (!meta) meta = SEO_CONFIG.default;
 
   return (
     <Head>
