@@ -9,13 +9,14 @@ export default function AlbumPage() {
   const router = useRouter();
   const { client } = router.query;
 
+  const [modalOpen, setModalOpen] = useState(false);
+  const [slideIndex, setSlideIndex] = useState(0);
+
   if (!router.isReady) return null;
 
   const album = albumsData.find((a) => a.slug === client);
-  if (!album) return <p className="text-center mt-10">Loading...</p>;
 
-  const [modalOpen, setModalOpen] = useState(false);
-  const [slideIndex, setSlideIndex] = useState(0);
+  if (!album) return <p className="text-center mt-10">Loading...</p>;
 
   const openModal = (index) => {
     setSlideIndex(index);
