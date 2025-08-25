@@ -32,6 +32,7 @@ export default function AlbumPage({ album, client }) {
                     src={album.albumCover}
                     className="w-full"
                     alt="Wedding Photography"
+                    priority
                     width={478}
                     height={717}
                   />
