@@ -40,6 +40,33 @@ const nextConfig = {
       },
     ];
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'goodluckdps.com',
+          },
+        ],
+        destination: 'https://www.goodluckdps.com/:path*',
+        permanent: true,
+      },
+      {
+        source: '/',
+        has: [
+          {
+            type: 'host',
+            value: 'goodluckdps.com',
+          },
+        ],
+        destination: 'https://www.goodluckdps.com/',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

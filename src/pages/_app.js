@@ -3,8 +3,20 @@ import Header from "@/components/layout/Header";
 import ScrollToTop from "@/components/common/ScrollToTop";
 import Script from "next/script";
 import "@/styles/globals.css";
+import { useEffect, useState } from "react";
+import Head from "next/head";
+import { getCanonicalUrl } from "../../utils/getCanonicalUrl";
+import { useRouter } from "next/router";
+
 
 export default function App({ Component, pageProps, router }) {
+
+    const nextRouter = useRouter();
+    const [canonical, setCanonical] = useState("");
+
+    useEffect(() => {
+        setCanonical(getCanonicalUrl(nextRouter.asPath));
+    }, [nextRouter.asPath]);
 
     if (router.pathname === '/404') {
         return <Component {...pageProps} />;
@@ -24,12 +36,19 @@ export default function App({ Component, pageProps, router }) {
                 });
                 `}
             </Script>
-            <Header></Header>
+
+            {canonical && (
+                <Head>
+                    <link rel="canonical" href={canonical} />
+                </Head>
+            )}
+
+            <Header />
             <main className="content-main">
                 <Component {...pageProps} />
             </main>
             <ScrollToTop />
-            <Footer></Footer>
+            <Footer />
         </>
     );
 }
