@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 function Footer() {
+    const currentYear = new Date().getFullYear();
     return (
         <footer className="footer-main">
             <div className="container">
@@ -41,7 +42,7 @@ function Footer() {
                 </div>
             </div>
             <div className="copyright">
-                <p className="copyright-text">© 2025 Good Luck Digital Photo Studio - All Rights Reserved</p>
+                <p className="copyright-text">© {currentYear} Good Luck Digital Photo Studio - All Rights Reserved</p>
             </div>
         </footer>
     );

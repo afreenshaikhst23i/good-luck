@@ -1,40 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Good Luck Digital Photo Studio
+
+![Next.js](https://img.shields.io/badge/Next.js-13-blue)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v3-green)
+![Vercel](https://img.shields.io/badge/Hosting-Vercel-blue)
+
+Official website of **Good Luck Digital Photo Studio**, a trusted photography studio since 1995.  
+This site showcases our services, portfolio, and contact information, built with modern web technologies for a responsive, fast, and engaging user experience.  
+
+🌐 **Live Website:** [https://www.goodluckdps.com](https://www.goodluckdps.com)
+
+---
+
+## About
+
+Good Luck Digital Photo Studio has been capturing timeless moments for over 25 years. This website serves as a professional portfolio and online presence for our photography studio, offering clients an easy way to explore our work, services, and get in touch.
+
+---
+
+## Features
+
+- Fully **responsive design** for desktop, tablet, and mobile  
+- **SEO optimized** for better search visibility  
+- Interactive **gallery showcasing our photography**  
+- Smooth **animations and transitions** for a modern UI experience  
+- **Easy to maintain** using Next.js and Tailwind CSS best practices  
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js 13  
+- **Styling:** Tailwind CSS 3  
+- **Animations:** Framer Motion  
+- **Hosting:** Vercel  
+
+---
+
+## Folder Structure
+
+GOOD-LUCK
+│
+├─ public/ # Static assets: images, fonts, videos
+├─ src/
+│  ├─ components/ # Reusable React components
+│  ├─ data/ # Data files
+│  ├─ pages/ # Next.js pages
+│  ├─ styles/ # Global styles
+│  └─ utils/ # Utility functions
+├─ .gitignore
+├─ next-sitemap.config.js
+├─ next.config.mjs
+├─ package.json
+├─ postcss.config.cjs
+└─ README.md # This README file
+
+---
 
 ## Getting Started
 
-First, run the development server:
+To run the project locally:
 
 ```bash
+git clone https://github.com/afreenshaikhst23i/good-luck.git
+cd good-luck
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## License
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+© 1995–present Good Luck Digital Photo Studio
+All rights reserved.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
+- **Website:** [https://www.goodluckdps.com](https://www.goodluckdps.com)  
+- **Instagram:** [@goodluck.dps](https://www.instagram.com/goodluck.dps)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+**Showcasing a trusted photography studio with a modern, responsive website built using Next.js & Tailwind CSS.**
