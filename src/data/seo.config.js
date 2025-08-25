@@ -1,4 +1,4 @@
-const siteURL = "https://good-luck-dnii.vercel.app";
+const siteURL = "https://www.goodluckdps.com";
 
 const SEO_CONFIG = {
     default: {

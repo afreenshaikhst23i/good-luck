@@ -1,4 +1,8 @@
 const images = [
+    { src: "/images/amrin-shabbir/landscape-11.JPG", alt: "Wedding Photography – Beautiful Bride" },
+    { src: "/images/amrin-shabbir/landscape-15.JPG", alt: "Wedding Photography - Groom looking into the mirror" },
+    { src: "/images/ganesh-more/landscape-11.JPG", alt: "Wedding Photography - Bride and Grooom showing their engagement rings" },
+    { src: "/images/couple-1/landscape-12.jpg", alt: "Wedding Photography - Bride and Groom closeup" },
     { src: "/images/amrin-shabbir/landscape-12.JPG", alt: "Wedding Photography - Beautiful wedding guest in lehenga" },
     { src: "/images/sarika-manju/landscape-1.JPG", alt: "Wedding Photography - Bride and Groom showing brides mangalsutra" },
     { src: "/images/amrin-shabbir/landscape-17.JPG", alt: "Wedding Photography - Closeup of beautiful bride" },
