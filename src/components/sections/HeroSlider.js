@@ -22,7 +22,7 @@ export default function HeroSlider() {
                 modules={[Navigation, Pagination, Autoplay]}
                 navigation
                 pagination={{ clickable: true }}
-                autoplay={{ delay: 4000, disableOnInteraction: false }}
+                autoplay={{ delay: 10000, disableOnInteraction: false }}
                 loop={true}
                 className="w-full"
                 >
