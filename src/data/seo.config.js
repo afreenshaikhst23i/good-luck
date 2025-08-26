@@ -57,6 +57,13 @@ const SEO_CONFIG = {
                 image: `${siteURL}/images/og-image.jpg`,
                 url: `${siteURL}/albums/amrin-shabbir`,
         },
+        "nishat-mushtaq": {
+            title: "Nishat Weds Mushtaq | Wedding | Good Luck Studio",
+            description:
+                "Celebrate the timeless love story of Nishat and Mushtaq with Good Luck Digital Photo Studio through this beautiful wedding album, filled with candid moments, stunning rituals, and unforgettable memories captured to perfection.",
+                image: `${siteURL}/images/og-image.jpg`,
+                url: `${siteURL}/albums/nishat-mushtaq`,
+        },
         "ganesh-priyanka": {
             title: "Ganesh & Priyanka Engagement | Good Luck Studio",
             description:
@@ -70,6 +77,13 @@ const SEO_CONFIG = {
                 "Relive the beautiful moments of Sarika and Manju’s wedding through the lens of Good Luck Digital Photo Studio. From emotional ceremonies to candid celebrations, every memory is captured perfectly.",
                 image: `${siteURL}/images/og-image.jpg`,
                 url: `${siteURL}/albums/sarika-manju`,
+        },
+        "ankit-srushti": {
+            title: "Ankit Weds Srushti | Wedding | Good Luck Studio",
+            description:
+                "Step into the magical journey of Ankit and Srushti’s wedding captured by Good Luck Digital Photo Studio – a perfect blend of traditions, joy, and heartfelt moments preserved in this vibrant photo collection.",
+                image: `${siteURL}/images/og-image.jpg`,
+                url: `${siteURL}/albums/ankit-srushti`,
         },
         "haroon-simran": {
             title: "Haroon Weds Simran | Wedding | Good Luck Studio",
