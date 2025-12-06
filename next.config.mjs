@@ -2,6 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
 
+  experimental: {
+    turbo: false, //This disables Turbopack
+  },
+
   async headers() {
     const isDev = process.env.NODE_ENV === "development";
 
